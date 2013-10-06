@@ -1,6 +1,8 @@
 #PixelatedLoader
 
-Incrementally unpixelate images while they load. **[See demo.](http://gaboose.github.io/PixelatedLoader/)**
+Incrementally unpixelate images while they load.
+**[See demo](http://gaboose.github.io/PixelatedLoader/)** and
+**[its source code.](https://github.com/Gaboose/PixelatedLoader/tree/gh-pages)**
 
 ##Usage
 
