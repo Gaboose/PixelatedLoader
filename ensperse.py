@@ -40,7 +40,6 @@ for x in xrange(baseSize[0]):
         ))
 outputPos = output.len
 base.save(output, format="JPEG")
-base.save("base.jpg")
 header.write(encode_int(output.len - outputPos))
 
 # Every slice complements a pixelated image of size (width, height)
