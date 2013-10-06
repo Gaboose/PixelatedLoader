@@ -14,7 +14,7 @@ Images like **jpg** and **png** are encoded to store the first row first and the
 but **sparse** files can load like they're being enhanced by CSI.
 
 Image dimensions, that can be factorized into more 2's, work better,
-e.g. ![equation](http://latex.codecogs.com/gif.latex?1054*1024),
+e.g. ![equation](http://latex.codecogs.com/gif.latex?1536*1024),
 because ![equation](http://latex.codecogs.com/gif.latex?1536=3*2^9)
 and ![equation](http://latex.codecogs.com/gif.latex?1024=2*2^9).
 In fact, an image of these dimensions will have 9 "unpixelation steps".
