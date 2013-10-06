@@ -55,7 +55,7 @@ var PixelatedLoader=(function(){
 				var len=HEADER_UINT_BYTES*3;
 				if(!xhr.response||xhr.response.length<pos+len)
 					return false;
-				var ints=_decode_ints(xhr.response.substring(pos,pos+len));
+				var ints=_decode_ints(xhr.response.substr(pos,len));
 				baseWidth=ints[0];
 				baseHeight=ints[1];
 				slices=ints[2];
@@ -70,7 +70,7 @@ var PixelatedLoader=(function(){
 				var len=HEADER_UINT_BYTES*slices;
 				if(xhr.response.length<pos+len)
 					return false;
-				sliceLens=_decode_ints(xhr.response.substring(pos,pos+len));
+				sliceLens=_decode_ints(xhr.response.substr(pos,len));
 				pos+=len;
 				return true;
 			}
@@ -95,7 +95,7 @@ var PixelatedLoader=(function(){
 						}
 					}
 		        };
-				img.src="data:image/jpeg;base64,"+window.btoa(_binarize(xhr.response.substring(pos,pos+len)));
+				img.src="data:image/jpeg;base64,"+window.btoa(_binarize(xhr.response.substr(pos,len)));
 				pos+=len;
 				slicesStarted=1;
 				return true;
@@ -165,7 +165,7 @@ var PixelatedLoader=(function(){
 					}
 					context.putImageData(imgdata,0,0);
 		        };
-				img.src="data:image/jpeg;base64,"+window.btoa(_binarize(xhr.response.substring(pos,pos+len)));
+				img.src="data:image/jpeg;base64,"+window.btoa(_binarize(xhr.response.substr(pos,len)));
 				pos+=len;
 				return ++slicesStarted>=slices;
 			}
