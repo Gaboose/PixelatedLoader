@@ -33,4 +33,5 @@ Then add a Canvas element and invoke `PixelatedLoader.load` for every image you 
 </script>
 ```
 Replacing `DSC_1486.jpg.sparse` with your own sparse file, of course.
-Also make sure `PixelatedLoader.load` is called after the Canvas DOM element is created.
+Also make sure `PixelatedLoader.load` is called after the Canvas DOM element is created,
+like in the code snippet above.
