@@ -1,0 +1,11 @@
+<html>
+<body>
+	<script src="../PixelatedLoader.min.js"></script>
+	<canvas id="myCanvas"></canvas>
+	<script>
+		/* Date() is used here to avoid caching and better see the unpixelation effect on slow connections.
+		 * Normally you shouldn't add that. */
+		PixelatedLoader.load(document.getElementById("myCanvas"),"DSC_1486.jpg.sparse?"+Date());
+	</script>
+</body>
+</html>
